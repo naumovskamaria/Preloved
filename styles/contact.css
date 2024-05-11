@@ -1,0 +1,95 @@
+.contact {
+  background-color: var(--whiteColor);
+}
+
+.contact .contact-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 510px;
+  gap: 10px;
+}
+
+.contact .contact-box .contact-box-split {
+  display: flex;
+  gap: 10px;
+}
+
+.contact .contact-box input {
+  width: 100%;
+  height: 42px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 100%;
+  background-color: var(--lightGreyColor);
+  color: var(--blackColor);
+}
+
+.contact .contact-box input::placeholder {
+  color: var(--blackColor);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+.contact .contact-box button {
+  width: 100%;
+  border-radius: 10px;
+}
+.contact .contact-box .contact-box-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-top: 1px solid var(--lightGreyColor);
+  border-bottom: 1px solid var(--lightGreyColor);
+  margin: 10px 0;
+}
+.contact .contact-box .contact-box-select {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact .contact-box .contact-box-select p {
+  flex-shrink: 0;
+}
+.contact .contact-box .contact-box-select select {
+  width: 100%;
+  height: 42px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 100%;
+  background-color: var(--lightGreyColor);
+  color: var(--blackColor);
+  appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+}
+
+.contact .contact-box .contact-box-select select::-ms-expand {
+  display: none;
+}
+.contact .contact-box .contact-box-select select option {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+.contact .contact-box select:focus,
+.contact .contact-box input:focus {
+  outline: none;
+}
+@media (max-width: 768px) {
+  .contact .contact-box .contact-box-select {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,91 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+footer .footer-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--whiteBeigeColor);
+}
+footer .footer-box:last-child {
+  background-color: var(--blackColor);
+  padding: 2px 0;
+}
+
+footer .footer-box:last-child small {
+  color: var(--whiteColor);
+  font-style: normal;
+  font-weight: 500;
+}
+
+footer .footer-box .footer-box-item {
+  display: flex;
+  width: 100%;
+  max-width: 1920px;
+  padding: 20px 60px 40px 60px;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+footer .footer-box .footer-box-item .footer-box-item-data {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer .footer-box .footer-box-item .footer-box-item-data .footer-box-item-data-title {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+footer .footer-box .footer-box-item .footer-box-item-data .footer-box-item-data-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 48px;
+  height: 1px;
+  background: linear-gradient(90deg, #ffc7a1 0%, #ff6565 100%);
+}
+
+footer .footer-box .footer-box-item .footer-box-item-data .footer-box-item-data-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (max-width: 1240px) {
+  footer .footer-box .footer-box-item {
+    padding: 20px 40px 40px 40px;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  footer .footer-box .footer-box-item .footer-box-item-data {
+    width: calc(100% / 2 - 20px);
+  }
+}
+@media (max-width: 768px) {
+  footer .footer-box .footer-box-item .footer-box-item-data {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  footer .footer-box .footer-box-item .footer-box-item-data .footer-box-item-data-title {
+    width: 240px;
+    text-align: center;
+  }
+  footer .footer-box .footer-box-item .footer-box-item-data .footer-box-item-data-title::after {
+    width: 100%;
+  }
+  footer .footer-box .footer-box-item .footer-box-item-data .footer-box-item-data-links {
+    width: 240px;
+  }
+  footer .footer-box .footer-box-item .footer-box-item-data .footer-box-item-data-links a {
+    text-align: center;
+  }
+}

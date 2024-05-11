@@ -1,0 +1,77 @@
+.influencers .influencers-box {
+  display: flex;
+  gap: 40px;
+}
+
+.influencers .influencers-box .influencers-box-item {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  max-width: 224px;
+}
+
+.influencers .influencers-box .influencers-box-item .influencers-box-item-image {
+  height: 397px;
+  width: 100%;
+  object-fit: contain;
+  flex-shrink: 0;
+  border-radius: 20px;
+}
+.influencers .influencers-box .influencers-box-item .influencers-box-item-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.influencers .influencers-box .influencers-box-item .influencers-box-item-wrapper .influencers-box-item-info {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  align-items: center;
+}
+.influencers
+  .influencers-box
+  .influencers-box-item
+  .influencers-box-item-wrapper
+  .influencers-box-item-info
+  .influencers-box-item-info-subtitle {
+  display: flex;
+  flex-direction: column;
+}
+
+.influencers .influencers-box .influencers-box-item button {
+  width: 100%;
+  margin-top: auto;
+}
+
+@media (max-width: 1240px) {
+  .influencers .influencers-box {
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .influencers .influencers-box .influencers-box-item {
+    gap: 20px;
+    max-width: calc(100% / 2 - 20px);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .influencers .influencers-box .influencers-box-item .influencers-box-item-image {
+    height: 300px;
+  }
+  .influencers .influencers-box .influencers-box-item .influencers-box-item-wrapper {
+    width: 100%;
+    max-width: 224px;
+  }
+
+  .influencers .influencers-box .influencers-box-item button {
+    max-width: 224px;
+  }
+}
+@media (max-width: 768px) {
+  .influencers .influencers-box .influencers-box-item .influencers-box-item-image {
+    height: 240px;
+  }
+}

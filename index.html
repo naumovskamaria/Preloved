@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marija Naumovska</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <script src="./js/itemsAndOrder.js" defer></script>
+    <script src="./js/influencers.js" defer></script>
+    <script src="./js/reviews.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-box">
+          <a href="#" class="h4">Shop</a>
+          <a href="#" class="h4">Blog</a>
+        </div>
+        <div class="nav-box">
+          <a href="#">
+            <img src="./images/logo.svg" alt="Logo icon" class="logo" />
+          </a>
+        </div>
+        <div class="nav-box">
+          <a href="#">
+            <img src="./images/searchIcon.svg" alt="Search icon" />
+          </a>
+          <a href="#">
+            <img src="./images/cartIcon.svg" alt="Cart icon" />
+          </a>
+          <a href="#" class="show-mobile">
+            <img src="./images/hamburgerIcon.svg" alt="Hamburger icon" />
+          </a>
+        </div>
+      </nav>
+      <div class="hero">
+        <img src="./images/hero.png" class="hero-image" />
+        <div class="hero-title">
+          <h1>Love the hunt & enjoy the find</h1>
+          <button>Explore now</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="just-in">
+        <div class="section-box">
+          <h2 class="center-text">Just in: This week's fashion trends</h2>
+          <div class="just-in-box"></div>
+        </div>
+      </section>
+      <section class="influencers">
+        <div class="section-box">
+          <h2 class="center-text">Shop from our top influencers</h2>
+          <div class="influencers-box"></div>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="section-box">
+          <div class="reviews-box">
+            <div class="reviews-box-item">
+              <p>
+                Welcome to "Preloved", where fashion finds new life. Our brand is more than just an online shop - it's a
+                movement towards sustainability and style. With a passion for preserving the beauty of pre-owned
+                fashion, we're redefining the way you shop for clothes.
+                <br />
+                <br />
+                At Preloved, each garment tells a story. From designer labels to everyday essentials, our curated
+                collection is a treasure trove of unique finds waiting to be discovered. Every piece is carefully
+                selected for its quality, character, and contribution to a more sustainable future.
+                <br />
+                <br />
+                Join us in celebrating the beauty of second chances. With Preloved, you're not just buying clothes -
+                you're making a statement.
+              </p>
+              <div class="reviews-box-item-images">
+                <img src="./images/reviews/reviews1.png" alt="Review 1" />
+                <div class="reviews-box-item-images-sub">
+                  <img src="./images/reviews/reviews2.png" alt="Review 2" />
+                  <img src="./images/reviews/reviews3.png" alt="Review 3" />
+                </div>
+              </div>
+            </div>
+            <div class="reviews-box-item">
+              <div class="reviews-box-item-title center-text">
+                What people think
+                <span class="special-text">about us</span>
+              </div>
+              <div class="reviews-box-item-reviews"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="section-box">
+          <h2 class="h2-bold">Order form</h2>
+          <form class="contact-box">
+            <div class="contact-box-split">
+              <input type="text" placeholder="Name" autocomplete="name" required />
+              <input type="text" placeholder="Surname" autocomplete="family-name" required />
+            </div>
+            <input type="text" placeholder="Address" autocomplete="street-address" required />
+            <div class="contact-box-split">
+              <input type="text" placeholder="Zip code" autocomplete="postal-code" required />
+              <input type="text" placeholder="City" required />
+            </div>
+            <div class="contact-box-select">
+              <p class="body-text-bold">Choose an item:</p>
+              <select name="item" id="items"></select>
+            </div>
+            <div class="contact-box-item">
+              <p class="body-text-bold">Total</p>
+              <p class="body-text-bold" id="totalPrice"></p>
+            </div>
+            <button>CONFIRM ORDER</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-box">
+        <div class="footer-box-item">
+          <div class="footer-box-item-data">
+            <a href="#">
+              <img src="./images/logo.svg" alt="Logo icon" />
+            </a>
+          </div>
+          <div class="footer-box-item-data">
+            <div class="footer-box-item-data-title h4-bold">Shop</div>
+            <div class="footer-box-item-data-links">
+              <a href="#" class="disabled-text"> Browse Products </a>
+              <a href="#" class="disabled-text"> Returns & Exchanges </a>
+            </div>
+          </div>
+          <div class="footer-box-item-data">
+            <div class="footer-box-item-data-title h4-bold">Customer Service:</div>
+
+            <div class="footer-box-item-data-links">
+              <a href="#" class="disabled-text"> FAQs </a>
+              <a href="#" class="disabled-text"> Shipping Information </a>
+              <a href="#" class="disabled-text"> Privacy Policy </a>
+            </div>
+          </div>
+          <div class="footer-box-item-data">
+            <div class="footer-box-item-data-title h4-bold">Contact Us:</div>
+
+            <div class="footer-box-item-data-links">
+              <a href="mailto:preloved@hello.com " class="disabled-text"> Email: preloved@hello.com </a>
+              <a href="tel:123-456-7890" class="disabled-text">Phone: 123-456-7890</a>
+              <a href="#" class="disabled-text"> Skopje, North Macedonia </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-box">
+        <small> Copyright © 2024 Preloved. All rights reserved. </small>
+      </div>
+    </footer>
+  </body>
+</html>
